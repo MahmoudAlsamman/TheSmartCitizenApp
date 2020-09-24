@@ -14,7 +14,6 @@ class MainView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
@@ -29,15 +28,34 @@ class MainView: UIView {
     }
     
     private func setupLayout() {
-        addSubviews()
+        setupHierarchy()
         setupConstraints()
     }
     
-    private func addSubviews() {
-        
+    private func setupHierarchy() {
+        addSubview(mapView)
     }
     
     private func setupConstraints() {
-        
+        setupMapViewConstraints()
     }
+    
+    private func setupMapViewConstraints() {
+        NSLayoutConstraint.activate([
+            mapView.topAnchor.constraint(equalTo: topAnchor),
+            mapView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            mapView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            mapView.trailingAnchor.constraint(equalTo: trailingAnchor)
+        ])
+    }
+    
+    
+     let mapView: MKMapView = {
+        let mapView = MKMapView()
+        mapView.mapType = .standard
+        mapView.showsUserLocation = true
+        mapView.translatesAutoresizingMaskIntoConstraints = false
+        return mapView
+    }()
+    
 }
