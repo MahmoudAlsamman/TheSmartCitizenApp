@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Device: Codable {
+struct Station: Codable {
     let id: Int?
     let name: String?
     let description: String?
@@ -26,6 +26,6 @@ struct Device: Codable {
         case systemTags = "system_tags"
         case userTags = "user_tags"
         case lastReadTime = "last_reading_at"
-        case data
+        case data = "data"
     }
 }

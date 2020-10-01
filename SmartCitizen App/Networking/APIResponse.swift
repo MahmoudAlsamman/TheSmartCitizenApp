@@ -8,6 +8,6 @@
 import Foundation
 
 enum APIResponse {
-    typealias Devices = Result<[Device], Error>
-    typealias Devicex = Result<Device, Error>
+    typealias MultipleDevices = Result<[Station], Error>
+    typealias OneDevice = Result<Station, Error>
 }
