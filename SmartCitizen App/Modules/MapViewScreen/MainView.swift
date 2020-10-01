@@ -10,7 +10,15 @@ import MapKit
 
 class MainView: UIView {
     
-    private var isLayedOut: Bool = false
+    private var isLayedout: Bool = false
+    var delegate: MKMapViewDelegate? {
+        get {
+            return mapView.delegate
+        }
+        set {
+            mapView.delegate = newValue
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,9 +30,9 @@ class MainView: UIView {
     
     override func didMoveToWindow() {
         super.didMoveToWindow()
-        guard !isLayedOut else { return }
+        guard !isLayedout else { return }
         setupLayout()
-        isLayedOut = true
+        isLayedout = true
     }
     
     private func setupLayout() {
@@ -50,12 +58,26 @@ class MainView: UIView {
     }
     
     
-     let mapView: MKMapView = {
+     private let mapView: MKMapView = {
         let mapView = MKMapView()
+        mapView.translatesAutoresizingMaskIntoConstraints = false
+        mapView.register(StationAnnotationView.self, forAnnotationViewWithReuseIdentifier: "StationAnnotation")
+        mapView.register(MapClusterAnnotationView.self, forAnnotationViewWithReuseIdentifier: "cluster")
         mapView.mapType = .standard
         mapView.showsUserLocation = true
-        mapView.translatesAutoresizingMaskIntoConstraints = false
         return mapView
     }()
+    
+    func addPinsOnMapFor(_ devices: [Station]) {
+        mapView.removeAnnotations(mapView.annotations)
+        let pins = devices.map {MapPin(title: $0.name!, id: $0.id!, latidude: $0.latitude!, longtude: $0.longitude!)}
+        mapView.addAnnotations(pins)
+    }
+    
+    func centerOnLoction(_ coordinate: CLLocationCoordinate2D) {
+        let span = MKCoordinateSpan(latitudeDelta: 0.6, longitudeDelta: 0.6)
+        let region = MKCoordinateRegion.init(center: coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+    }
     
 }

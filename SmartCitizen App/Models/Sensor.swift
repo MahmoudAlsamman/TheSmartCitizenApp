@@ -6,9 +6,11 @@
 //
 
 import Foundation
+
 struct Sensors: Codable {
     let sensors: [Sensor]
 }
+
 struct Sensor: Codable {
     let id: Int
     let name: String
