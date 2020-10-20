@@ -41,13 +41,28 @@ class MainViewController: UIViewController {
             }
         }
     }
+    
+    func displayStationDetails(for id: Int) {
+        let stationVC = StationDetailsViewController(for: id)
+        self.addChild(stationVC)
+        mainView.addChildView(stationVC.view)
+        stationVC.didMove(toParent: self)
+    }
+    
+    func removeChildControllers() {
+        children.forEach {
+            $0.willMove(toParent: nil)
+            $0.view.removeFromSuperview()
+            $0.removeFromParent()
+        }
+    }
 }
 
 extension MainViewController: LocationManagerDelegate {
     func didUpdate(_ location: CLLocation) {
         if !isLocationCentered {
             isLocationCentered = true
-//            mainView.centerOnLoction(location.coordinate)
+            //            mainView.centerOnLoction(location.coordinate)
         }
     }
 }
@@ -70,10 +85,21 @@ extension MainViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        if view.annotation is MapPin  {
-            navigationController?.pushViewController(StationDetailsViewController(), animated: true)
+        if view.annotation is MapPin {
+            let station = view.annotation as! MapPin
+            let id = station.id
+            displayStationDetails(for: id)
         } else if view.annotation is MKClusterAnnotation {
             mainView.centerOnLoction(view.annotation!.coordinate)
+        } else {
+            mapView.deselectAnnotation(view.annotation, animated: false)
+            
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        if view.annotation is MapPin {
+            removeChildControllers()
         }
     }
 }

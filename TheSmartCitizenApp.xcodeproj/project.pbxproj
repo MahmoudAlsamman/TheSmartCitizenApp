@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20AEEB62527C63B00BCABC9 /* SensorDetailsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20AEEB52527C63B00BCABC9 /* SensorDetailsCellView.swift */; };
 		D21AEF46251D218300366344 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEF45251D218300366344 /* Station.swift */; };
 		D24164CF2521108C006C562D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24164CE2521108C006C562D /* LocationManager.swift */; };
 		D24164F425214215006C562D /* StationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24164F325214215006C562D /* StationAnnotationView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D20AEEB52527C63B00BCABC9 /* SensorDetailsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsCellView.swift; sourceTree = "<group>"; };
 		D21AEF45251D218300366344 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		D24164CE2521108C006C562D /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D24164F325214215006C562D /* StationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotationView.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				D2BDC39825252658004732BD /* StationDetailsViewController.swift */,
 				D2BDC39D2525266E004732BD /* StationDetailsView.swift */,
+				D20AEEB52527C63B00BCABC9 /* SensorDetailsCellView.swift */,
 			);
 			path = StationDetailsScreen;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2BDC39925252658004732BD /* StationDetailsViewController.swift in Sources */,
+				D20AEEB62527C63B00BCABC9 /* SensorDetailsCellView.swift in Sources */,
 				D2BDC3A625253EDA004732BD /* MapClusterAnnotationView.swift in Sources */,
 				D2B172382523C33000A8AECD /* MapPin.swift in Sources */,
 				D2707950251BD4FC009D21A9 /* MainViewController.swift in Sources */,
@@ -530,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mahmoudsa.SmartCitizen-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -549,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mahmoudsa.SmartCitizen-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

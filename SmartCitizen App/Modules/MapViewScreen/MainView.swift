@@ -80,4 +80,16 @@ class MainView: UIView {
         mapView.setRegion(region, animated: true)
     }
     
+    func addChildView(_ view: UIView) {
+        mapView.addSubview(view)
+        view.didMoveToSuperview()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = (bounds.width * 0.10)
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowRadius = 10
+        NSLayoutConstraint.activate([view.heightAnchor.constraint(equalTo:view.widthAnchor),
+                                     view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
+                                     view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+                                     view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)])
+    }
 }
