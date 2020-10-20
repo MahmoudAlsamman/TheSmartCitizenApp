@@ -10,7 +10,7 @@ import Foundation
 
 class APIClient {
     
-    private let session = URLSession.shared
+     var session = URLSession.shared
     
     func fetch<T: Codable>(_ router: Router, completion: @escaping (Result<T, Error>) -> Void) {
         
