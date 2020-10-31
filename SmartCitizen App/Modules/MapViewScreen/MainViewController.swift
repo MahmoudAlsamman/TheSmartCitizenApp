@@ -11,7 +11,7 @@ import MapKit
 
 class MainViewController: UIViewController {
     
-    var locationManager = LocationManager()
+    lazy var locationManager = LocationManager()
     var mainView = MainView()
     let apiClient = APIClient()
     var stations = [Station]()
@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        view = mainView
+        view = MainView()
     }
     
     func loadAllOnlineDevices() {
@@ -35,6 +35,7 @@ class MainViewController: UIViewController {
             case .success(let devices):
                 let onlineStations = devices.filter {$0.systemTags!.contains("online")}
                 self?.stations = onlineStations
+                print(onlineStations)
                 self?.mainView.addPinsOnMapFor(onlineStations)
             case .failure(let error):
                 print("\(error)")

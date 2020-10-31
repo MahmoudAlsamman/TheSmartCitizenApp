@@ -58,8 +58,8 @@ class SensorDetailsCellView: UICollectionViewCell {
         NSLayoutConstraint.activate([
             sensorImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             sensorImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            sensorImageView.heightAnchor.constraint(equalToConstant: 50),
-            sensorImageView.widthAnchor.constraint(equalToConstant: 50)
+            sensorImageView.heightAnchor.constraint(equalToConstant: 30),
+            sensorImageView.widthAnchor.constraint(equalToConstant: 30)
         ])
     }
   
@@ -67,6 +67,7 @@ class SensorDetailsCellView: UICollectionViewCell {
         let label = UILabel()
         label.numberOfLines = 0
         label.adjustsFontSizeToFitWidth = true
+        label.font = UIFont.systemFont(ofSize: 10.0)
         label.textAlignment = .center
         return label
     }()
@@ -75,14 +76,15 @@ class SensorDetailsCellView: UICollectionViewCell {
         let label = UILabel()
         label.numberOfLines = 0
         label.adjustsFontSizeToFitWidth = true
+        label.font = UIFont.systemFont(ofSize: 12.0)
         label.textAlignment = .center
-        label.text = "Temp"
         return label
     }()
     
     private let sensorImageView: UIImageView = {
         let image = UIImageView()
         image.clipsToBounds = true
+        image.contentMode = .scaleAspectFit
         image.image = UIImage(named: "sun")
         return image
     }()
@@ -98,7 +100,8 @@ class SensorDetailsCellView: UICollectionViewCell {
     }
     
     func setupCellWith(sensorDetails: Sensor) {
-        sensorValue.text = "\(sensorDetails.value)"
-        sensorName.text = sensorDetails.name
+        sensorValue.text = "\(sensorDetails.value) \(sensorDetails.unit)"
+        sensorName.text = sensorDetails.getSensorName()
+        sensorImageView.image = UIImage(named: sensorDetails.getSensorName())
     }
 }
