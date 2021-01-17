@@ -3,76 +3,95 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20AEEB62527C63B00BCABC9 /* SensorDetailsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20AEEB52527C63B00BCABC9 /* SensorDetailsCellView.swift */; };
-		D21AEF46251D218300366344 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEF45251D218300366344 /* Station.swift */; };
+		6C0EB85070B9B9663DFF147C /* Pods_TheSmartCitizenApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31400902634DF9CB6657FF1 /* Pods_TheSmartCitizenApp.framework */; };
+		D2090673258D7735004DD777 /* ShortKitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2090672258D7735004DD777 /* ShortKitDetailsView.swift */; };
+		D211696F25A0F8C9000F5E6A /* KitDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211696E25A0F8C9000F5E6A /* KitDetailsViewController.swift */; };
+		D211697225A0F8E8000F5E6A /* KitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211697125A0F8E8000F5E6A /* KitDetailsView.swift */; };
+		D211697625A0F8F1000F5E6A /* KitDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211697525A0F8F1000F5E6A /* KitDetailsViewModel.swift */; };
+		D21AEF46251D218300366344 /* SmartKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21AEF45251D218300366344 /* SmartKit.swift */; };
 		D24164CF2521108C006C562D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24164CE2521108C006C562D /* LocationManager.swift */; };
-		D24164F425214215006C562D /* StationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24164F325214215006C562D /* StationAnnotationView.swift */; };
+		D24164F425214215006C562D /* KitAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24164F325214215006C562D /* KitAnnotationView.swift */; };
+		D24476D525B49854002D40BC /* SensorDetailsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24476D425B49854002D40BC /* SensorDetailsCellView.swift */; };
+		D24476D925B4CC5A002D40BC /* Factories+KitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24476D825B4CC5A002D40BC /* Factories+KitDetails.swift */; };
+		D24476DD25B4CF3D002D40BC /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24476DC25B4CF3D002D40BC /* PaddingLabel.swift */; };
+		D244B54D25A100ED00017A82 /* KitDetailsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244B54C25A100ED00017A82 /* KitDetailsAPIService.swift */; };
+		D244B55125A1017F00017A82 /* GetKitDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244B55025A1017F00017A82 /* GetKitDetailsRequest.swift */; };
+		D244B55A25A1307100017A82 /* KitLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244B55925A1307100017A82 /* KitLocation.swift */; };
+		D244B55D25A131D100017A82 /* KitSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244B55C25A131D100017A82 /* KitSensor.swift */; };
+		D24CBBC625A0D72F0090B642 /* OnlineKitsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CBBC525A0D72F0090B642 /* OnlineKitsAPIService.swift */; };
+		D25CECD425840AC800BCB98E /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CECD325840AC800BCB98E /* CodeView.swift */; };
+		D25CECDC25840ADC00BCB98E /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CECDB25840ADC00BCB98E /* CodeViewController.swift */; };
+		D25CECEF258410A200BCB98E /* ApplicationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CECEE258410A200BCB98E /* ApplicationFactory.swift */; };
+		D25CECFA258412B400BCB98E /* KitsMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25CECF9258412B400BCB98E /* KitsMapViewModel.swift */; };
 		D270794C251BD4FC009D21A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270794B251BD4FC009D21A9 /* AppDelegate.swift */; };
-		D2707950251BD4FC009D21A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270794F251BD4FC009D21A9 /* MainViewController.swift */; };
+		D2707950251BD4FC009D21A9 /* KitsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270794F251BD4FC009D21A9 /* KitsMapViewController.swift */; };
 		D2707955251BD4FF009D21A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2707954251BD4FF009D21A9 /* Assets.xcassets */; };
 		D2707958251BD4FF009D21A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2707956251BD4FF009D21A9 /* LaunchScreen.storyboard */; };
-		D2707963251BD4FF009D21A9 /* SmartCitizen_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2707962251BD4FF009D21A9 /* SmartCitizen_AppTests.swift */; };
-		D270796E251BD4FF009D21A9 /* SmartCitizen_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270796D251BD4FF009D21A9 /* SmartCitizen_AppUITests.swift */; };
-		D270798E251BD9B0009D21A9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270798D251BD9B0009D21A9 /* MainView.swift */; };
-		D2A8A3D1251D3D00002A84BD /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8A3D0251D3D00002A84BD /* Sensor.swift */; };
+		D270798E251BD9B0009D21A9 /* KitsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270798D251BD9B0009D21A9 /* KitsMapView.swift */; };
+		D27E1F072584237B00E54F69 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E1F062584237B00E54F69 /* APIRequest.swift */; };
+		D27E1F0C258438A400E54F69 /* GetAllDevicesRquest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E1F0B258438A400E54F69 /* GetAllDevicesRquest.swift */; };
+		D2A8A3D1251D3D00002A84BD /* KitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8A3D0251D3D00002A84BD /* KitData.swift */; };
 		D2A8A3D6251D3D88002A84BD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8A3D5251D3D88002A84BD /* APIClient.swift */; };
 		D2B172382523C33000A8AECD /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B172372523C33000A8AECD /* MapPin.swift */; };
-		D2BDC39925252658004732BD /* StationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDC39825252658004732BD /* StationDetailsViewController.swift */; };
-		D2BDC39E2525266E004732BD /* StationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDC39D2525266E004732BD /* StationDetailsView.swift */; };
-		D2BDC3A625253EDA004732BD /* MapClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDC3A525253EDA004732BD /* MapClusterAnnotationView.swift */; };
-		D2EFE025251FE2A0006BF6CA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFE024251FE2A0006BF6CA /* Router.swift */; };
+		D2BD9E47259E4ECD0027B96D /* ViewSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BD9E46259E4ECD0027B96D /* ViewSetupable.swift */; };
+		D2BD9E4F259E59120027B96D /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BD9E4E259E59120027B96D /* UIView+Layout.swift */; };
+		D2BD9E58259E6E380027B96D /* enviroment.json in Resources */ = {isa = PBXBuildFile; fileRef = D2BD9E57259E6E380027B96D /* enviroment.json */; };
+		D2BDC3A625253EDA004732BD /* KitClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BDC3A525253EDA004732BD /* KitClusterAnnotationView.swift */; };
+		D2D0030C25A0BF0B0045F13C /* HudLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0030B25A0BF0B0045F13C /* HudLoader.swift */; };
 		D2EFE02A251FE9C9006BF6CA /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFE029251FE9C9006BF6CA /* APIClientError.swift */; };
 		D2EFE03E25200F79006BF6CA /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFE03D25200F79006BF6CA /* APIResponse.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D270795F251BD4FF009D21A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2707940251BD4FB009D21A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2707947251BD4FB009D21A9;
-			remoteInfo = "SmartCitizen App";
-		};
-		D270796A251BD4FF009D21A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2707940251BD4FB009D21A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2707947251BD4FB009D21A9;
-			remoteInfo = "SmartCitizen App";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		D20AEEB52527C63B00BCABC9 /* SensorDetailsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsCellView.swift; sourceTree = "<group>"; };
-		D21AEF45251D218300366344 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		1A53DE12051E4609676CA6BF /* Pods-TheSmartCitizenApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSmartCitizenApp.release.xcconfig"; path = "Target Support Files/Pods-TheSmartCitizenApp/Pods-TheSmartCitizenApp.release.xcconfig"; sourceTree = "<group>"; };
+		44026E5B4FBBA7CAB8349E41 /* Pods-TheSmartCitizenApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSmartCitizenApp.debug.xcconfig"; path = "Target Support Files/Pods-TheSmartCitizenApp/Pods-TheSmartCitizenApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D2090672258D7735004DD777 /* ShortKitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortKitDetailsView.swift; sourceTree = "<group>"; };
+		D211696E25A0F8C9000F5E6A /* KitDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitDetailsViewController.swift; sourceTree = "<group>"; };
+		D211697125A0F8E8000F5E6A /* KitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitDetailsView.swift; sourceTree = "<group>"; };
+		D211697525A0F8F1000F5E6A /* KitDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitDetailsViewModel.swift; sourceTree = "<group>"; };
+		D21AEF45251D218300366344 /* SmartKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartKit.swift; sourceTree = "<group>"; };
 		D24164CE2521108C006C562D /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		D24164F325214215006C562D /* StationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotationView.swift; sourceTree = "<group>"; };
+		D24164F325214215006C562D /* KitAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitAnnotationView.swift; sourceTree = "<group>"; };
+		D24476D425B49854002D40BC /* SensorDetailsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsCellView.swift; sourceTree = "<group>"; };
+		D24476D825B4CC5A002D40BC /* Factories+KitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Factories+KitDetails.swift"; sourceTree = "<group>"; };
+		D24476DC25B4CF3D002D40BC /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		D244B54C25A100ED00017A82 /* KitDetailsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitDetailsAPIService.swift; sourceTree = "<group>"; };
+		D244B55025A1017F00017A82 /* GetKitDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetKitDetailsRequest.swift; sourceTree = "<group>"; };
+		D244B55925A1307100017A82 /* KitLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitLocation.swift; sourceTree = "<group>"; };
+		D244B55C25A131D100017A82 /* KitSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitSensor.swift; sourceTree = "<group>"; };
+		D24CBBC525A0D72F0090B642 /* OnlineKitsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineKitsAPIService.swift; sourceTree = "<group>"; };
+		D25CECD325840AC800BCB98E /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		D25CECDB25840ADC00BCB98E /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		D25CECEE258410A200BCB98E /* ApplicationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFactory.swift; sourceTree = "<group>"; };
+		D25CECF9258412B400BCB98E /* KitsMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitsMapViewModel.swift; sourceTree = "<group>"; };
 		D2707948251BD4FC009D21A9 /* TheSmartCitizenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSmartCitizenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D270794B251BD4FC009D21A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D270794F251BD4FC009D21A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D270794F251BD4FC009D21A9 /* KitsMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitsMapViewController.swift; sourceTree = "<group>"; };
 		D2707954251BD4FF009D21A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2707957251BD4FF009D21A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2707959251BD4FF009D21A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D270795E251BD4FF009D21A9 /* TheSmartCitizenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSmartCitizenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2707962251BD4FF009D21A9 /* SmartCitizen_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCitizen_AppTests.swift; sourceTree = "<group>"; };
 		D2707964251BD4FF009D21A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2707969251BD4FF009D21A9 /* TheSmartCitizenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSmartCitizenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D270796D251BD4FF009D21A9 /* SmartCitizen_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCitizen_AppUITests.swift; sourceTree = "<group>"; };
-		D270796F251BD4FF009D21A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D270798D251BD9B0009D21A9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		D2A8A3D0251D3D00002A84BD /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		D270798D251BD9B0009D21A9 /* KitsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitsMapView.swift; sourceTree = "<group>"; };
+		D27E1EF625841C0000E54F69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D27E1EFB25841C2600E54F69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D27E1F062584237B00E54F69 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D27E1F0B258438A400E54F69 /* GetAllDevicesRquest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDevicesRquest.swift; sourceTree = "<group>"; };
+		D2A8A3D0251D3D00002A84BD /* KitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitData.swift; sourceTree = "<group>"; };
 		D2A8A3D5251D3D88002A84BD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		D2B172372523C33000A8AECD /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
-		D2BDC39825252658004732BD /* StationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsViewController.swift; sourceTree = "<group>"; };
-		D2BDC39D2525266E004732BD /* StationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsView.swift; sourceTree = "<group>"; };
-		D2BDC3A525253EDA004732BD /* MapClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapClusterAnnotationView.swift; sourceTree = "<group>"; };
-		D2EFE024251FE2A0006BF6CA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D2BD9E46259E4ECD0027B96D /* ViewSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSetupable.swift; sourceTree = "<group>"; };
+		D2BD9E4E259E59120027B96D /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		D2BD9E57259E6E380027B96D /* enviroment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = enviroment.json; sourceTree = "<group>"; };
+		D2BDC3A525253EDA004732BD /* KitClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitClusterAnnotationView.swift; sourceTree = "<group>"; };
+		D2D0030B25A0BF0B0045F13C /* HudLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudLoader.swift; sourceTree = "<group>"; };
 		D2EFE029251FE9C9006BF6CA /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		D2EFE03D25200F79006BF6CA /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		D31400902634DF9CB6657FF1 /* Pods_TheSmartCitizenApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSmartCitizenApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,20 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D270795B251BD4FF009D21A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2707966251BD4FF009D21A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6C0EB85070B9B9663DFF147C /* Pods_TheSmartCitizenApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,25 +109,97 @@
 		D21AEF3D251D215300366344 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D21AEF45251D218300366344 /* Station.swift */,
-				D2A8A3D0251D3D00002A84BD /* Sensor.swift */,
+				D21AEF45251D218300366344 /* SmartKit.swift */,
+				D2A8A3D0251D3D00002A84BD /* KitData.swift */,
 				D2B172372523C33000A8AECD /* MapPin.swift */,
+				D244B55925A1307100017A82 /* KitLocation.swift */,
+				D244B55C25A131D100017A82 /* KitSensor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D21AEF41251D215F00366344 /* Networking */ = {
+		D24CBBD225A0EAA90090B642 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				D2A8A3D5251D3D88002A84BD /* APIClient.swift */,
-				D2EFE024251FE2A0006BF6CA /* Router.swift */,
-				D2EFE029251FE9C9006BF6CA /* APIClientError.swift */,
-				D2EFE03D25200F79006BF6CA /* APIResponse.swift */,
+				D27E1F0B258438A400E54F69 /* GetAllDevicesRquest.swift */,
+				D244B55025A1017F00017A82 /* GetKitDetailsRequest.swift */,
 			);
-			path = Networking;
+			path = Requests;
 			sourceTree = "<group>";
 		};
-		D24164C72521103E006C562D /* Managers */ = {
+		D24CBBD325A0EAB30090B642 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				D24CBBC525A0D72F0090B642 /* OnlineKitsAPIService.swift */,
+				D244B54C25A100ED00017A82 /* KitDetailsAPIService.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		D25CECCA25840A4400BCB98E /* Base classes */ = {
+			isa = PBXGroup;
+			children = (
+				D25CECD325840AC800BCB98E /* CodeView.swift */,
+				D25CECDB25840ADC00BCB98E /* CodeViewController.swift */,
+			);
+			path = "Base classes";
+			sourceTree = "<group>";
+		};
+		D25CECD225840AA600BCB98E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2BD9E56259E6C9F0027B96D /* Animations */,
+				D2707954251BD4FF009D21A9 /* Assets.xcassets */,
+				D2707959251BD4FF009D21A9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D25CECEC2584102A00BCB98E /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				D2707956251BD4FF009D21A9 /* LaunchScreen.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		D25CECED2584108A00BCB98E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D270794B251BD4FC009D21A9 /* AppDelegate.swift */,
+				D25CECEE258410A200BCB98E /* ApplicationFactory.swift */,
+				D24476D825B4CC5A002D40BC /* Factories+KitDetails.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D25CED042584195E00BCB98E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D2D0031625A0CEE00045F13C /* SharedUI */,
+				D2BD9E45259E4E9F0027B96D /* Protocols */,
+				D25CED07258419DA00BCB98E /* Helper extensions */,
+				D25CED062584197400BCB98E /* Managers */,
+				D25CED052584196E00BCB98E /* API */,
+				D25CECCA25840A4400BCB98E /* Base classes */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D25CED052584196E00BCB98E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D24CBBD325A0EAB30090B642 /* APIServices */,
+				D24CBBD225A0EAA90090B642 /* Requests */,
+				D2A8A3D5251D3D88002A84BD /* APIClient.swift */,
+				D2EFE029251FE9C9006BF6CA /* APIClientError.swift */,
+				D2EFE03D25200F79006BF6CA /* APIResponse.swift */,
+				D27E1F062584237B00E54F69 /* APIRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D25CED062584197400BCB98E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				D24164CE2521108C006C562D /* LocationManager.swift */,
@@ -129,13 +207,22 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		D25CED07258419DA00BCB98E /* Helper extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2BD9E4E259E59120027B96D /* UIView+Layout.swift */,
+			);
+			path = "Helper extensions";
+			sourceTree = "<group>";
+		};
 		D270793F251BD4FB009D21A9 = {
 			isa = PBXGroup;
 			children = (
 				D270794A251BD4FC009D21A9 /* SmartCitizen App */,
 				D2707961251BD4FF009D21A9 /* SmartCitizen AppTests */,
-				D270796C251BD4FF009D21A9 /* SmartCitizen AppUITests */,
 				D2707949251BD4FC009D21A9 /* Products */,
+				D27E1EF525841C0000E54F69 /* Frameworks */,
+				EB6B0A0AC71161E8EBDF809C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,8 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				D2707948251BD4FC009D21A9 /* TheSmartCitizenApp.app */,
-				D270795E251BD4FF009D21A9 /* TheSmartCitizenAppTests.xctest */,
-				D2707969251BD4FF009D21A9 /* TheSmartCitizenAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,14 +237,12 @@
 		D270794A251BD4FC009D21A9 /* SmartCitizen App */ = {
 			isa = PBXGroup;
 			children = (
-				D2BDC38F25252531004732BD /* Modules */,
-				D24164C72521103E006C562D /* Managers */,
-				D21AEF41251D215F00366344 /* Networking */,
+				D25CECED2584108A00BCB98E /* Application */,
 				D21AEF3D251D215300366344 /* Models */,
-				D270794B251BD4FC009D21A9 /* AppDelegate.swift */,
-				D2707954251BD4FF009D21A9 /* Assets.xcassets */,
-				D2707956251BD4FF009D21A9 /* LaunchScreen.storyboard */,
-				D2707959251BD4FF009D21A9 /* Info.plist */,
+				D2BDC38F25252531004732BD /* Screens */,
+				D25CED042584195E00BCB98E /* Shared */,
+				D25CECEC2584102A00BCB98E /* Interfaces */,
+				D25CECD225840AA600BCB98E /* Resources */,
 			);
 			path = "SmartCitizen App";
 			sourceTree = "<group>";
@@ -173,43 +256,89 @@
 			path = "SmartCitizen AppTests";
 			sourceTree = "<group>";
 		};
-		D270796C251BD4FF009D21A9 /* SmartCitizen AppUITests */ = {
+		D27E1EF525841C0000E54F69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D270796D251BD4FF009D21A9 /* SmartCitizen_AppUITests.swift */,
-				D270796F251BD4FF009D21A9 /* Info.plist */,
+				D27E1EFB25841C2600E54F69 /* Foundation.framework */,
+				D27E1EF625841C0000E54F69 /* UIKit.framework */,
+				D31400902634DF9CB6657FF1 /* Pods_TheSmartCitizenApp.framework */,
 			);
-			path = "SmartCitizen AppUITests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2BDC38F25252531004732BD /* Modules */ = {
+		D2BD9E45259E4E9F0027B96D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				D2BDC39025252540004732BD /* MapViewScreen */,
-				D2BDC394252525F5004732BD /* StationDetailsScreen */,
+				D2BD9E46259E4ECD0027B96D /* ViewSetupable.swift */,
 			);
-			path = Modules;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		D2BDC39025252540004732BD /* MapViewScreen */ = {
+		D2BD9E56259E6C9F0027B96D /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				D270794F251BD4FC009D21A9 /* MainViewController.swift */,
-				D270798D251BD9B0009D21A9 /* MainView.swift */,
-				D24164F325214215006C562D /* StationAnnotationView.swift */,
-				D2BDC3A525253EDA004732BD /* MapClusterAnnotationView.swift */,
+				D2BD9E57259E6E380027B96D /* enviroment.json */,
 			);
-			path = MapViewScreen;
+			path = Animations;
 			sourceTree = "<group>";
 		};
-		D2BDC394252525F5004732BD /* StationDetailsScreen */ = {
+		D2BDC38F25252531004732BD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D2BDC39825252658004732BD /* StationDetailsViewController.swift */,
-				D2BDC39D2525266E004732BD /* StationDetailsView.swift */,
-				D20AEEB52527C63B00BCABC9 /* SensorDetailsCellView.swift */,
+				D2BDC39025252540004732BD /* KitsMapScreen */,
+				D2BDC394252525F5004732BD /* KitDetailsScreen */,
 			);
-			path = StationDetailsScreen;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D2BDC39025252540004732BD /* KitsMapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D2D0030F25A0CE060045F13C /* Additional Views */,
+				D270798D251BD9B0009D21A9 /* KitsMapView.swift */,
+				D270794F251BD4FC009D21A9 /* KitsMapViewController.swift */,
+				D25CECF9258412B400BCB98E /* KitsMapViewModel.swift */,
+			);
+			path = KitsMapScreen;
+			sourceTree = "<group>";
+		};
+		D2BDC394252525F5004732BD /* KitDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D211696E25A0F8C9000F5E6A /* KitDetailsViewController.swift */,
+				D211697125A0F8E8000F5E6A /* KitDetailsView.swift */,
+				D24476D425B49854002D40BC /* SensorDetailsCellView.swift */,
+				D211697525A0F8F1000F5E6A /* KitDetailsViewModel.swift */,
+			);
+			path = KitDetailsScreen;
+			sourceTree = "<group>";
+		};
+		D2D0030F25A0CE060045F13C /* Additional Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2090672258D7735004DD777 /* ShortKitDetailsView.swift */,
+				D24164F325214215006C562D /* KitAnnotationView.swift */,
+				D2BDC3A525253EDA004732BD /* KitClusterAnnotationView.swift */,
+			);
+			path = "Additional Views";
+			sourceTree = "<group>";
+		};
+		D2D0031625A0CEE00045F13C /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				D2D0030B25A0BF0B0045F13C /* HudLoader.swift */,
+				D24476DC25B4CF3D002D40BC /* PaddingLabel.swift */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		EB6B0A0AC71161E8EBDF809C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44026E5B4FBBA7CAB8349E41 /* Pods-TheSmartCitizenApp.debug.xcconfig */,
+				1A53DE12051E4609676CA6BF /* Pods-TheSmartCitizenApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2707972251BD4FF009D21A9 /* Build configuration list for PBXNativeTarget "TheSmartCitizenApp" */;
 			buildPhases = (
+				1F698499CEB09972F038803F /* [CP] Check Pods Manifest.lock */,
 				D2707944251BD4FB009D21A9 /* Sources */,
 				D2707945251BD4FB009D21A9 /* Frameworks */,
 				D2707946251BD4FB009D21A9 /* Resources */,
+				AD78E15B5DE860090F1A6858 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,42 +362,6 @@
 			productName = "SmartCitizen App";
 			productReference = D2707948251BD4FC009D21A9 /* TheSmartCitizenApp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D270795D251BD4FF009D21A9 /* TheSmartCitizenAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2707975251BD4FF009D21A9 /* Build configuration list for PBXNativeTarget "TheSmartCitizenAppTests" */;
-			buildPhases = (
-				D270795A251BD4FF009D21A9 /* Sources */,
-				D270795B251BD4FF009D21A9 /* Frameworks */,
-				D270795C251BD4FF009D21A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2707960251BD4FF009D21A9 /* PBXTargetDependency */,
-			);
-			name = TheSmartCitizenAppTests;
-			productName = "SmartCitizen AppTests";
-			productReference = D270795E251BD4FF009D21A9 /* TheSmartCitizenAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D2707968251BD4FF009D21A9 /* TheSmartCitizenAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2707978251BD4FF009D21A9 /* Build configuration list for PBXNativeTarget "TheSmartCitizenAppUITests" */;
-			buildPhases = (
-				D2707965251BD4FF009D21A9 /* Sources */,
-				D2707966251BD4FF009D21A9 /* Frameworks */,
-				D2707967251BD4FF009D21A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D270796B251BD4FF009D21A9 /* PBXTargetDependency */,
-			);
-			name = TheSmartCitizenAppUITests;
-			productName = "SmartCitizen AppUITests";
-			productReference = D2707969251BD4FF009D21A9 /* TheSmartCitizenAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -279,14 +374,6 @@
 				TargetAttributes = {
 					D2707947251BD4FB009D21A9 = {
 						CreatedOnToolsVersion = 12.0;
-					};
-					D270795D251BD4FF009D21A9 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = D2707947251BD4FB009D21A9;
-					};
-					D2707968251BD4FF009D21A9 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = D2707947251BD4FB009D21A9;
 					};
 				};
 			};
@@ -304,8 +391,6 @@
 			projectRoot = "";
 			targets = (
 				D2707947251BD4FB009D21A9 /* TheSmartCitizenApp */,
-				D270795D251BD4FF009D21A9 /* TheSmartCitizenAppTests */,
-				D2707968251BD4FF009D21A9 /* TheSmartCitizenAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -317,79 +402,96 @@
 			files = (
 				D2707958251BD4FF009D21A9 /* LaunchScreen.storyboard in Resources */,
 				D2707955251BD4FF009D21A9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D270795C251BD4FF009D21A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2707967251BD4FF009D21A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D2BD9E58259E6E380027B96D /* enviroment.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F698499CEB09972F038803F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheSmartCitizenApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD78E15B5DE860090F1A6858 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheSmartCitizenApp/Pods-TheSmartCitizenApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheSmartCitizenApp/Pods-TheSmartCitizenApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheSmartCitizenApp/Pods-TheSmartCitizenApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2707944251BD4FB009D21A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2BDC39925252658004732BD /* StationDetailsViewController.swift in Sources */,
-				D20AEEB62527C63B00BCABC9 /* SensorDetailsCellView.swift in Sources */,
-				D2BDC3A625253EDA004732BD /* MapClusterAnnotationView.swift in Sources */,
+				D244B54D25A100ED00017A82 /* KitDetailsAPIService.swift in Sources */,
+				D27E1F0C258438A400E54F69 /* GetAllDevicesRquest.swift in Sources */,
+				D2D0030C25A0BF0B0045F13C /* HudLoader.swift in Sources */,
+				D27E1F072584237B00E54F69 /* APIRequest.swift in Sources */,
+				D2BDC3A625253EDA004732BD /* KitClusterAnnotationView.swift in Sources */,
+				D25CECEF258410A200BCB98E /* ApplicationFactory.swift in Sources */,
 				D2B172382523C33000A8AECD /* MapPin.swift in Sources */,
-				D2707950251BD4FC009D21A9 /* MainViewController.swift in Sources */,
-				D2A8A3D1251D3D00002A84BD /* Sensor.swift in Sources */,
+				D211696F25A0F8C9000F5E6A /* KitDetailsViewController.swift in Sources */,
+				D25CECFA258412B400BCB98E /* KitsMapViewModel.swift in Sources */,
+				D244B55125A1017F00017A82 /* GetKitDetailsRequest.swift in Sources */,
+				D2707950251BD4FC009D21A9 /* KitsMapViewController.swift in Sources */,
+				D2A8A3D1251D3D00002A84BD /* KitData.swift in Sources */,
 				D24164CF2521108C006C562D /* LocationManager.swift in Sources */,
-				D270798E251BD9B0009D21A9 /* MainView.swift in Sources */,
-				D24164F425214215006C562D /* StationAnnotationView.swift in Sources */,
-				D2EFE025251FE2A0006BF6CA /* Router.swift in Sources */,
+				D270798E251BD9B0009D21A9 /* KitsMapView.swift in Sources */,
+				D24164F425214215006C562D /* KitAnnotationView.swift in Sources */,
+				D2090673258D7735004DD777 /* ShortKitDetailsView.swift in Sources */,
 				D270794C251BD4FC009D21A9 /* AppDelegate.swift in Sources */,
-				D21AEF46251D218300366344 /* Station.swift in Sources */,
+				D21AEF46251D218300366344 /* SmartKit.swift in Sources */,
+				D24CBBC625A0D72F0090B642 /* OnlineKitsAPIService.swift in Sources */,
+				D25CECD425840AC800BCB98E /* CodeView.swift in Sources */,
 				D2EFE02A251FE9C9006BF6CA /* APIClientError.swift in Sources */,
+				D211697225A0F8E8000F5E6A /* KitDetailsView.swift in Sources */,
+				D244B55A25A1307100017A82 /* KitLocation.swift in Sources */,
+				D24476DD25B4CF3D002D40BC /* PaddingLabel.swift in Sources */,
+				D2BD9E4F259E59120027B96D /* UIView+Layout.swift in Sources */,
+				D244B55D25A131D100017A82 /* KitSensor.swift in Sources */,
 				D2A8A3D6251D3D88002A84BD /* APIClient.swift in Sources */,
-				D2BDC39E2525266E004732BD /* StationDetailsView.swift in Sources */,
+				D211697625A0F8F1000F5E6A /* KitDetailsViewModel.swift in Sources */,
+				D24476D925B4CC5A002D40BC /* Factories+KitDetails.swift in Sources */,
+				D25CECDC25840ADC00BCB98E /* CodeViewController.swift in Sources */,
+				D2BD9E47259E4ECD0027B96D /* ViewSetupable.swift in Sources */,
+				D24476D525B49854002D40BC /* SensorDetailsCellView.swift in Sources */,
 				D2EFE03E25200F79006BF6CA /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D270795A251BD4FF009D21A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2707963251BD4FF009D21A9 /* SmartCitizen_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2707965251BD4FF009D21A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D270796E251BD4FF009D21A9 /* SmartCitizen_AppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D2707960251BD4FF009D21A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2707947251BD4FB009D21A9 /* TheSmartCitizenApp */;
-			targetProxy = D270795F251BD4FF009D21A9 /* PBXContainerItemProxy */;
-		};
-		D270796B251BD4FF009D21A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2707947251BD4FB009D21A9 /* TheSmartCitizenApp */;
-			targetProxy = D270796A251BD4FF009D21A9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D2707956251BD4FF009D21A9 /* LaunchScreen.storyboard */ = {
@@ -521,12 +623,13 @@
 		};
 		D2707973251BD4FF009D21A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44026E5B4FBBA7CAB8349E41 /* Pods-TheSmartCitizenApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZ6GT9JR86;
-				INFOPLIST_FILE = "SmartCitizen App/Info.plist";
+				INFOPLIST_FILE = "SmartCitizen App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,12 +643,13 @@
 		};
 		D2707974251BD4FF009D21A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A53DE12051E4609676CA6BF /* Pods-TheSmartCitizenApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZ6GT9JR86;
-				INFOPLIST_FILE = "SmartCitizen App/Info.plist";
+				INFOPLIST_FILE = "SmartCitizen App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,86 +658,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		D2707976251BD4FF009D21A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SmartCitizen AppTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mahmoudsa.SmartCitizen-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSmartCitizenApp.app/TheSmartCitizenApp";
-			};
-			name = Debug;
-		};
-		D2707977251BD4FF009D21A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SmartCitizen AppTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mahmoudsa.SmartCitizen-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSmartCitizenApp.app/TheSmartCitizenApp";
-			};
-			name = Release;
-		};
-		D2707979251BD4FF009D21A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SmartCitizen AppUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mahmoudsa.SmartCitizen-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SmartCitizen App";
-			};
-			name = Debug;
-		};
-		D270797A251BD4FF009D21A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SmartCitizen AppUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mahmoudsa.SmartCitizen-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SmartCitizen App";
 			};
 			name = Release;
 		};
@@ -654,24 +678,6 @@
 			buildConfigurations = (
 				D2707973251BD4FF009D21A9 /* Debug */,
 				D2707974251BD4FF009D21A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2707975251BD4FF009D21A9 /* Build configuration list for PBXNativeTarget "TheSmartCitizenAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2707976251BD4FF009D21A9 /* Debug */,
-				D2707977251BD4FF009D21A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2707978251BD4FF009D21A9 /* Build configuration list for PBXNativeTarget "TheSmartCitizenAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2707979251BD4FF009D21A9 /* Debug */,
-				D270797A251BD4FF009D21A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
