@@ -6,6 +6,7 @@
 //
 
 struct KitData: Codable {
+    
     let sensors: [KitSensor]
     let location: KitLocation
     

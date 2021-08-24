@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SensorDetailsCellView: UICollectionViewCell {
+final class SensorDetailsCellView: UICollectionViewCell {
     
     // MARK: - Constants
     

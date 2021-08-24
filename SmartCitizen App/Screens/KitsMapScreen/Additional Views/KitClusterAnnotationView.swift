@@ -8,8 +8,9 @@
 import MapKit
 import UIKit
 
-class KitClusterAnnotationView: MKAnnotationView {
+final class KitClusterAnnotationView: MKAnnotationView {
     
+    /// Cluster Annotation Identifier.
     static let identifier = "KitClusterAnnotationView"
     
     override var annotation: MKAnnotation? {

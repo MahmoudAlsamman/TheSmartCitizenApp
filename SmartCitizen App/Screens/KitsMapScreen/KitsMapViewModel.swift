@@ -5,22 +5,32 @@
 //  Created by Mahmoud Alsamman on 11/12/2020.
 //
 
-class KitsMapViewModel {
+final class KitsMapViewModel {
     
-    let factory: KitDetailsViewControllerFactory
+    // MARK: - Properties
+    
     var selectedKit: SmartKit?
     private var devices: [SmartKit] = []
+
+    // MARK: - Dependencies
     
-    
+    let factory: KitDetailsViewControllerFactory
     private let locationManager: LocationManager
-    
     private let apiClient: OnlineKitsAPIService & KitDetailsAPIService
     
-    init(apiClient: APIClient, locationManager: LocationManager, factory: KitDetailsViewControllerFactory) {
+    // MARK: - Initializer
+    
+    init(
+        apiClient: APIClient,
+        locationManager: LocationManager,
+        factory: KitDetailsViewControllerFactory
+    ) {
         self.apiClient = apiClient
         self.locationManager = locationManager
         self.factory = factory
     }
+    
+    // MARK: - Methods
     
     func getAnnotationsForOnlineDevices(completion: @escaping (Result<[MapPin], Error>) -> Void) {
         apiClient.getOnlineKits { result in

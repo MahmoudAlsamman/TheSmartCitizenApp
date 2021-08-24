@@ -7,7 +7,7 @@
 
 import UIKit
 
-class KitDetailsViewController: CodeViewController<KitDetailsView> {
+final class KitDetailsViewController: CodeViewController<KitDetailsView> {
     
     private let viewModel: KitDetailsViewModel
     

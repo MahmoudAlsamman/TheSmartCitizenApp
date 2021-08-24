@@ -8,6 +8,7 @@
 import MapKit
 
 class MapPin: NSObject, MKAnnotation {
+    
     let id: Int
     let coordinate: CLLocationCoordinate2D
     

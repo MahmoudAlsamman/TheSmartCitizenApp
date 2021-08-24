@@ -7,9 +7,13 @@
 
 import Foundation
 
-class APIClient {
+final class APIClient {
+    
+    // MARK: - Dependencies
     
     var session = URLSession.shared
+    
+    // MARK: - Methods
     
     func perform<Request: APIRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) {
         

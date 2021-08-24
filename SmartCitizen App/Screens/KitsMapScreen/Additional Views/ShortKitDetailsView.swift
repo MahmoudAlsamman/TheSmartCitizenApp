@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class ShortKitDetailsView: CodeView {
+final class ShortKitDetailsView: CodeView {
     
     // MARK: - Public points of contact
     
@@ -94,7 +94,6 @@ class ShortKitDetailsView: CodeView {
         label.textAlignment = .left
         label.numberOfLines = 0
         label.textColor = .label
-        label.text = "20 %"
         return label
     }()
     
@@ -104,7 +103,6 @@ class ShortKitDetailsView: CodeView {
         label.textAlignment = .left
         label.numberOfLines = 0
         label.textColor = .label
-        label.text = "22°"
         return label
     }()
     
@@ -137,7 +135,19 @@ class ShortKitDetailsView: CodeView {
 
 extension ShortKitDetailsView: ViewSetupable {
     func setupViewHierarchy() {
-        addSubviews(nameLabel, lastUpdateLabel, addressLabel, deviceIdLabel, deviceFirstTagLabel, deviceSecondTagLabel, animationView, temperatureImageView, temperatureLabel, batteryImageView, batteryLabel)
+        addSubviews(
+            nameLabel,
+            lastUpdateLabel,
+            addressLabel,
+            deviceIdLabel,
+            deviceFirstTagLabel,
+            deviceSecondTagLabel,
+            animationView,
+            temperatureImageView,
+            temperatureLabel,
+            batteryImageView,
+            batteryLabel
+        )
     }
     
     func setupConstraints() {

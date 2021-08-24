@@ -7,21 +7,27 @@
 
 import UIKit
 
-class PaddingLabel: UILabel {
+final class PaddingLabel: UILabel {
     
-    var topInset: CGFloat = 5.0
-    var bottomInset: CGFloat = 5.0
-    var leftInset: CGFloat = 5.0
-    var rightInset: CGFloat = 5.0
+    private enum Constants {
+        static let topInset: CGFloat = 5.0
+        static let bottomInset: CGFloat = 5.0
+        static let leftInset: CGFloat = 5.0
+        static let rightInset: CGFloat = 5.0
+    }
     
     override func drawText(in rect: CGRect) {
-        let insets = UIEdgeInsets.init(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
+        let insets = UIEdgeInsets(top: Constants.topInset,
+                                  left: Constants.leftInset,
+                                  bottom: Constants.bottomInset,
+                                  right: Constants.rightInset
+        )
         super.drawText(in: rect.inset(by: insets))
     }
     
     override var intrinsicContentSize: CGSize {
         let size = super.intrinsicContentSize
-        return CGSize(width: size.width + leftInset + rightInset,
-                      height: size.height + topInset + bottomInset)
+        return CGSize(width: size.width + Constants.leftInset + Constants.rightInset,
+                      height: size.height + Constants.topInset + Constants.bottomInset)
     }
 }

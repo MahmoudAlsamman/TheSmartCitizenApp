@@ -7,12 +7,14 @@
 import UIKit
 import MapKit
 
-class KitAnnotationView: MKAnnotationView {
+final class KitAnnotationView: MKAnnotationView {
     
+    /// Annotation Identifier.
     static let identifier = "KitAnnotationView"
+    
     private let pinImage = UIImage(named: "station")
     
-    override open var annotation: MKAnnotation? {
+    override public var annotation: MKAnnotation? {
         willSet {
             if (newValue as? MapPin) != nil {
                 setupAnnotationView()

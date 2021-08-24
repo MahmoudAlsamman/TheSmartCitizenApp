@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class KitDetailsView: CodeView {
+final class KitDetailsView: CodeView {
     
     // MARK: - Public points of contact
     

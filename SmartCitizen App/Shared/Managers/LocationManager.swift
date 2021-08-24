@@ -12,7 +12,7 @@ protocol LocationManagerDelegate: AnyObject {
     func didUpdate(_ location:CLLocation)
 }
 
-class LocationManager: NSObject {
+final class LocationManager: NSObject {
     
     private var manager: CLLocationManager
     weak var delegate: LocationManagerDelegate?

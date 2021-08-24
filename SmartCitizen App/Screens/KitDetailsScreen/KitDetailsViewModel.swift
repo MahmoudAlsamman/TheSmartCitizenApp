@@ -5,7 +5,7 @@
 //  Created by Mahmoud Alsamman on 02/01/2021.
 //
 
-class KitDetailsViewModel {
+final class KitDetailsViewModel {
     
     let kit: SmartKit
     var sensors: [KitSensor] {

@@ -22,17 +22,17 @@ struct KitSensor: Codable {
     }
     
     enum SensorType: Int {
-        case tvoc      = 113
-        case eco2      = 112
-        case lux       = 14
-        case battery   = 10
-        case noise     = 53
+        case tvoc = 113
+        case eco2 = 112
+        case lux = 14
+        case battery = 10
+        case noise = 53
         case barometer = 58
-        case pm1       = 89
-        case pm10      = 88
-        case pm2       = 87
-        case humidity  = 56
-        case temp      = 55
+        case pm1 = 89
+        case pm10 = 88
+        case pm2 = 87
+        case humidity = 56
+        case temp = 55
     }
     
     enum CodingKeys: String, CodingKey {

@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class HUDLoader: CodeView {
+final class HUDLoader: CodeView {
 
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
