@@ -44,13 +44,11 @@ final class APIClient {
                 print("[🤦🏽‍♂️] - Error: \(APIError.badHTTPResponse(statusCode: httpResponse.statusCode))")
                 return
             }
-            
-            let jsonDecoder = JSONDecoder()
-            jsonDecoder.dateDecodingStrategy = .iso8601
-            
-            if let result = try? jsonDecoder.decode(Request.Response.self, from: data) {
+
+            if let result = try? Request.Response.decoder.decode(Request.Response.self, from: data) {
                 finalResult = .success(result)
             } else {
+                print(String(data: data, encoding: .utf8))
                 finalResult = .failure(APIError.decoding)
                 print("[🤦🏽‍♂️] - Error: \(APIError.decoding)")
             }

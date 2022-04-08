@@ -62,7 +62,6 @@ final class KitsMapViewController: CodeViewController<KitsMapView> {
 // MARK: - MapView Delegates
 
 extension KitsMapViewController: MKMapViewDelegate {
-    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         switch annotation {
         case is MKUserLocation:

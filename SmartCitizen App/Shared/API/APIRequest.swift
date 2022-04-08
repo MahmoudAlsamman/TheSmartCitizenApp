@@ -9,7 +9,7 @@ import Foundation
 
 protocol APIRequest: Encodable {
     
-    associatedtype Response: Decodable
+    associatedtype Response: APIResponse
     
     var httpMethod: String { get }
     var scheme: String { get }
@@ -26,10 +26,10 @@ extension APIRequest {
     var queryItems: [URLQueryItem]? { nil }
     
     func build() -> URLRequest {
-        var urlComponents        = URLComponents()
-        urlComponents.scheme     = scheme
-        urlComponents.host       = host
-        urlComponents.path       = path
+        var urlComponents = URLComponents()
+        urlComponents.scheme = scheme
+        urlComponents.host = host
+        urlComponents.path = path
         urlComponents.queryItems = queryItems
         guard let url = urlComponents.url else { fatalError("[🤦🏽‍♂️] - Bad URL") }
         var urlRequest = URLRequest(url: url)

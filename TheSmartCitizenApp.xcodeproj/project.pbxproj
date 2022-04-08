@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A03D28727F0848900221502 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0A03D28627F0848900221502 /* Lottie */; };
+		0A03D28927F085DA00221502 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03D28827F085DA00221502 /* Date+String.swift */; };
 		D2090673258D7735004DD777 /* ShortKitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2090672258D7735004DD777 /* ShortKitDetailsView.swift */; };
 		D211696F25A0F8C9000F5E6A /* KitDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211696E25A0F8C9000F5E6A /* KitDetailsViewController.swift */; };
 		D211697225A0F8E8000F5E6A /* KitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211697125A0F8E8000F5E6A /* KitDetailsView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A03D28827F085DA00221502 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		D2090672258D7735004DD777 /* ShortKitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortKitDetailsView.swift; sourceTree = "<group>"; };
 		D211696E25A0F8C9000F5E6A /* KitDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitDetailsViewController.swift; sourceTree = "<group>"; };
 		D211697125A0F8E8000F5E6A /* KitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitDetailsView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				D2BD9E4E259E59120027B96D /* UIView+Layout.swift */,
+				0A03D28827F085DA00221502 /* Date+String.swift */,
 			);
 			path = "Helper extensions";
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				D25CECEF258410A200BCB98E /* ApplicationFactory.swift in Sources */,
 				D2B172382523C33000A8AECD /* MapPin.swift in Sources */,
 				D211696F25A0F8C9000F5E6A /* KitDetailsViewController.swift in Sources */,
+				0A03D28927F085DA00221502 /* Date+String.swift in Sources */,
 				D25CECFA258412B400BCB98E /* KitsMapViewModel.swift in Sources */,
 				D244B55125A1017F00017A82 /* GetKitDetailsRequest.swift in Sources */,
 				D2707950251BD4FC009D21A9 /* KitsMapViewController.swift in Sources */,

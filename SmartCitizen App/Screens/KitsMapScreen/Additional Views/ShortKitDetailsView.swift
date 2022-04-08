@@ -18,7 +18,7 @@ final class ShortKitDetailsView: CodeView {
         addressLabel.text = smartKit.data?.location.address
         deviceFirstTagLabel.text = smartKit.systemTags[0]
         deviceSecondTagLabel.text = smartKit.systemTags[1]
-        lastUpdateLabel.text = "Last read: \(smartKit.lastRead)"
+        lastUpdateLabel.text = "Last read: \(smartKit.lastReadingAt)"
         temperatureLabel.text = smartKit.data?.getReadingsFor(sensorType: .temp)
         batteryLabel.text = smartKit.data?.getReadingsFor(sensorType: .battery)
     }

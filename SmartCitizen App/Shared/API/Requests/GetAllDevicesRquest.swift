@@ -7,9 +7,18 @@
 
 struct GetAllKitsRequest: APIRequest {
     
-    typealias Response = [SmartKit]
+    typealias Response = GetAllKitsResponse
     
     var path: String {
         "/v0/devices/world_map"
+    }
+}
+
+struct GetAllKitsResponse: APIResponse {
+    let kits: [SmartKit]
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        kits = try container.decode([SmartKit].self)
     }
 }

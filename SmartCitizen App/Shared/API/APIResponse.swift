@@ -7,12 +7,15 @@
 
 import Foundation
 
-protocol APIResponse: Decodable {
+protocol APIResponse: Codable {
     static var decoder: JSONDecoder { get }
 }
 
 extension APIResponse {
     static var decoder: JSONDecoder {
-        return JSONDecoder()
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
     }
 }

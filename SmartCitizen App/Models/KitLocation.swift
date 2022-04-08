@@ -10,14 +10,9 @@ struct KitLocation: Codable {
     let latitude: Double
     let longitude: Double
     private let city: String?
-    private let countryId: String?
+    private let countryCode: String?
     
     var address: String? {
-        "\(city ?? "") \(countryId ?? "")"
-    }
-  
-    enum CodingKeys: String, CodingKey {
-        case latitude, longitude, city
-        case countryId = "country_code"
+        "\(city ?? "") \(countryCode ?? "")"
     }
 }

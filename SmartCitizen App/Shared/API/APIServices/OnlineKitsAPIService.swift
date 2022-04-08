@@ -14,8 +14,8 @@ extension APIClient: OnlineKitsAPIService {
         let request = GetAllKitsRequest()
         perform(request) { result in
             switch result {
-                case .success(let kits):
-                    let onlineKits = kits.filter {
+                case .success(let response):
+                let onlineKits = response.kits.filter {
                         $0.systemTags.contains("online") &&
                             $0.longitude != nil &&
                             $0.latitude != nil
